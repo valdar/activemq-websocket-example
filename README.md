@@ -10,7 +10,7 @@ After that it creates a fabric, a child container, an mq-websocket profile and f
 When the script finish you should be able to check fuse container's local ports with:
 ```
 $ docker ps
-CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                                                                                                                                                  																	NAMES
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                                                                                                                                                                                                                                                                                    NAMES
 2d28823d8415        fuse6.2:latest      "/bin/sh -c 'service   10 minutes ago      Up 10 minutes       0.0.0.0:49200->22/tcp, 0.0.0.0:49201->44444/tcp, 0.0.0.0:49202->8181/tcp, 0.0.0.0:49203->1099/tcp, 0.0.0.0:49204->8101/tcp, 0.0.0.0:61614->61614/tcp, 0.0.0.0:61615->61615/tcp, 0.0.0.0:61616->61616/tcp, 0.0.0.0:61617->61617/tcp, 0.0.0.0:61618->61618/tcp, 0.0.0.0:61619->61619/tcp   root
 ```
 in this example the hawtio console would be at `http://localhost:49202`, karaf console at `localhost:49204` and ssh into the container at `localhost:49200`.
